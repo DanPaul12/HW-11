@@ -5,8 +5,10 @@ def add_book(library):
     author = input("Who is the book's author?: ")
     book = (title, author)
     for books in library:
-        if book[0] == books[0] in library:
+        (titles, _) = books
+        if title == titles:
             print("We already gots that")
+            break
         else:
             library.append(book)
             print(library)
